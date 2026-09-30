@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-    
+
 
 from app.routers.upload import router as upload_router
 
@@ -15,7 +15,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
-                   "https://veritext-ai-seven.vercel.app",],
+                   "https://veritext-ai-frontend-i9fc7etnf-aarya-a26d.vercel.app/dashboard",],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
