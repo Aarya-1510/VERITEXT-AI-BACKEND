@@ -15,6 +15,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
+                   "https://veritext-ai-frontend.vercel.app",
                    "https://veritext-ai-frontend-i9fc7etnf-aarya-a26d.vercel.app"],
     allow_credentials=False,
     allow_methods=["*"],
